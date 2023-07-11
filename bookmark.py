@@ -78,7 +78,9 @@ def bookmark(username):
         with open(filename, 'w') as file:
             file.write(json_data)
 
-        print(f"\n\n  Bookmark saved as : {filename} \n")
+        print(f"\n\n  Total Starred Repositories : {len(starred_repos)} \n")
+        print(f"  Bookmark saved as : {filename} \n")
+
     else:
         print("  Username not found!  \n")
 
